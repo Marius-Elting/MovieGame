@@ -1,6 +1,6 @@
 import { useEffect,  useState } from 'react'
 import axios from 'axios'
-// @ts-expect-error TODO check later
+// @ts-ignore
 import {famousFilms} from "./movies.ts"
 import "./Quiz.scss"
 
