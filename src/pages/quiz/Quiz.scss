@@ -1,0 +1,113 @@
+.playground{
+    display: flex;
+    flex-direction: column;
+
+    .hints{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+
+        p{
+            white-space: pre-wrap;
+            margin: 0;
+        }
+
+        button{
+            padding: .5rem;
+            font-size: 1.2em;
+            background-color: #747bff;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            filter: drop-shadow(0px 1px 3px white);
+    
+    
+            &:hover:not([disabled]){
+                cursor: pointer;
+                background-color: #747bff;
+                color: white;
+                filter: drop-shadow(0px 1px 5px white);
+            }
+
+            &:disabled{
+                background-color: gray;
+                filter: none;
+            }
+        }
+    }
+
+    .answers{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        justify-content: center;
+
+        button{
+            padding: .5rem;
+            font-size: 1em;
+            background-color: #747bff;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            filter: drop-shadow(0px 1px 3px white);
+    
+    
+            &:hover:not([disabled]){
+                cursor: pointer;
+                background-color: #747bff;
+                color: white;
+                filter: drop-shadow(0px 1px 5px white);
+            }
+
+            &:disabled{
+                background-color: gray;
+                filter: none;
+            }
+
+            &.winner{
+                background-color: green;
+                filter: drop-shadow(0px 1px 5px lightgreen);
+                &:focus{
+                    background-color: green;
+                    filter: drop-shadow(0px 1px 5px lightgreen);
+                }
+            }
+
+        }
+    }
+}
+
+.newGame{
+    padding: .5rem;
+    font-size: 1em;
+    background-color: #747bff;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    filter: drop-shadow(0px 1px 3px white);
+
+
+    &:hover:not([disabled]){
+        cursor: pointer;
+        background-color: #747bff;
+        color: white;
+        filter: drop-shadow(0px 1px 5px white);
+    }
+
+    &:disabled{
+        background-color: gray;
+        filter: none;
+    }
+
+    &.winner{
+        background-color: green;
+        filter: drop-shadow(0px 1px 5px lightgreen);
+    }
+}
+.results{
+    margin-bottom: 8rem;
+
+}

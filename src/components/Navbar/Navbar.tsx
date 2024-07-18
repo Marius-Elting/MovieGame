@@ -1,12 +1,12 @@
+import { Link } from 'react-router-dom'
 import "./Navbar.scss"
 
 const Navbar = () => {
   return (
     <nav className='navbar_wrapper'>
         <ul>
-            <li>Start</li>
-            <li>Rec</li>
-            <li>History</li>
+            <Link to={"/"}>Search</Link>
+            <Link to={"/quiz"}>Game</Link>
         </ul>
     </nav>
   )
