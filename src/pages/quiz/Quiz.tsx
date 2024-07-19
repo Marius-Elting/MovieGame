@@ -42,7 +42,7 @@ const Quiz = () => {
         const randomMovies = getRandomMovies();
         setMovies(randomMovies);
         (async()=> {
-            const response = await axios.get(`http://www.omdbapi.com/?t=${randomMovies[0]}&plot=full&apikey=3e1791d`)
+            const response = await axios.get(`https://www.omdbapi.com/?t=${randomMovies[0]}&plot=full&apikey=3e1791d`)
             const movie = response.data
             const hint = ["Actors: \n "+movie.Actors, "Director: \n"+movie.Director, "Plot: \n"+movie.Plot]
             setMovies(prev => shuffleMovies([movie.Title, ...prev.slice(1,3)]))
