@@ -16,7 +16,7 @@ const Start = () => {
 
     const searchMovie = async ()=> {
         if(!search_ref.current?.value) return
-        const response: {data: {Search: Array<IMovie>}} = await axios.get(`http://www.omdbapi.com/?s=${search_ref.current?.value}&range=100&apikey=3e1791d`)
+        const response: {data: {Search: Array<IMovie>}} = await axios.get(`https://www.omdbapi.com/?s=${search_ref.current?.value}&range=100&apikey=3e1791d`)
         console.log(response)
         setMovies(response.data.Search)
     }
